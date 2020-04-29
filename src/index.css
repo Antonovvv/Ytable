@@ -11,9 +11,15 @@
     display: flex;
     align-items: center;
 }
-.cell-input {
-    width: 100px;
+.controller-input {
+    display: flex;
+    flex-direction: column;
     margin-right: 20px;
+}
+.cell-input {
+    width: 60px;
+    margin: 0 10px 0 10px;
+    display: inline-block;
 }
 .file-input {
     width: 100px;
@@ -25,14 +31,23 @@
     text-align: center;
     line-height: 100px;
 }
-.test {
-
+.action-box {
+    display: flex;
+    flex-direction: column;
+}
+.action-btn {
+    width: 60px;
+    margin-bottom: 15px;
 }
 
+/*Table样式*/
 .sheet-table {
     height: 70vh;
     overflow-y: auto;
     position: relative;
+}
+.table-header-div {
+    float: left;
 }
 .table-head-div {
     overflow-x: scroll;
@@ -52,6 +67,9 @@
 .table-left-div::-webkit-scrollbar {
     display: none;
 }
+.table-header {
+    margin-bottom: 0;
+}
 .table-head {
     table-layout: fixed;
     margin-bottom: 0;
@@ -60,9 +78,8 @@
     visibility: collapse;
 }
 .table-left {
-    table-layout: fixed;
-    width: 34px;
     border-top: 0;
+    margin-bottom: 0;
 }
 .hiden-table-left {
     visibility: hidden;
@@ -71,10 +88,9 @@
     position: relative;
     margin-bottom: 0;
 }
-.table-foot {
-    position: fixed;
-    bottom: 0;
-}
-.fakeScrollBar {
+.pretend-bar-col {
     width: 15px;
+}
+.pretend-bar-row {
+    height: 15px;
 }
